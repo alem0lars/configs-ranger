@@ -1,0 +1,4 @@
+ranger:
+  preview_images_method: iterm2
+
+# vim: set filetype=yaml :

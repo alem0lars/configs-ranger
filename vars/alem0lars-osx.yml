@@ -1,4 +1,4 @@
-# => inherits: generic, with-w3m <= #
+# => inherits: generic, with-iterm <= #
 
 ranger:
   dir_history_size: 8192
