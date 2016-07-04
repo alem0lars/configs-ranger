@@ -1,0 +1,13 @@
+# => inherits: generic <= #
+
+ranger:
+  preview_images_method: w3m
+  dir_history_size: 8192
+  console_history_size: 8192
+
+features:
+  - git
+  - mercurial
+  - bazaar
+
+# vim: set filetype=yaml :

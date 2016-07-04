@@ -1,0 +1,9 @@
+elems:
+
+  - src: elems/(.+)$
+    dst: ~/.config/ranger/<1>
+    only:
+      features:
+        - ranger
+
+# vim: set filetype=eruby.yaml :
