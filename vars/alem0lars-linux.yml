@@ -6,9 +6,13 @@ ranger:
   console_history_size: 8192
 
 features:
-  # Archive
+  # Archive management operations (using `atool`).
   - atool
-  # VCS
+  # Highlight source code (using `source-highlight`).
+  - source_highlight
+  # Media information (using `mediainfo`).
+  - media_info
+  # VCS support.
   - git
   - mercurial
   - bazaar
