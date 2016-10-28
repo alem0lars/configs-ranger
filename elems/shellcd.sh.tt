@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+
+export AUTOCD="$(realpath "$1")"
+
+$SHELL
+
+
+# vim: set filetype=eruby.zsh :

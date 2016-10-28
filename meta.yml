@@ -1,12 +1,12 @@
 elems:
 
-  - src:   ^(scope\.sh)$
+  - src:   ^(.+\.sh)$
     dst:   ~/.config/ranger/<1>
     perms: 755
     only:  f?ranger
 
-  - src:  ^((?!.*scope\.sh).+)$
-    dst:   ~/.config/ranger/<1>
+  - src:  ^((?!.*\.sh).+)$
+    dst:  ~/.config/ranger/<1>
     only: f?ranger
 
 
