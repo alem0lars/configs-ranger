@@ -1,5 +1,6 @@
 # => inherits: generic, with-iterm <= #
 
+
 ranger:
   dir_history_size: 8192
   console_history_size: 8192
@@ -8,5 +9,6 @@ features:
   - git
   - mercurial
   - bazaar
+
 
 # vim: set filetype=yaml :

@@ -1,9 +1,13 @@
 elems:
 
-  - src: elems/(.+)$
-    dst: ~/.config/ranger/<1>
-    only:
-      features:
-        - ranger
+  - src:   ^(scope\.sh)$
+    dst:   ~/.config/ranger/<1>
+    perms: 755
+    only:  f?ranger
+
+  - src:  ^((?!.*scope\.sh).+)$
+    dst:   ~/.config/ranger/<1>
+    only: f?ranger
+
 
 # vim: set filetype=eruby.yaml :
