@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 #
 # ranger supports enhanced previews.  If the option "use_preview_script"
 # is set to True and this file exists, this script will be called and its
@@ -87,8 +87,7 @@ case "$mimetype" in
     # Syntax highlight for text files:
     *)
       <% if has_feature? :source_highlight %>
-      source-highlight --failsafe --infer-lang --out-format=esc \
-                       --style-file=esc.style -i "$path" && { dump | trim; exit 5; }
+      try source-highlight --failsafe --infer-lang --out-format=esc --style-file=esc.style -i "$path" && { dump | trim; exit 5; }
       <% end %>
       exit 2
       ;;
