@@ -125,7 +125,8 @@ set status_bar_on_top false
 set draw_progress_bar_in_status_bar true
 
 # Draw borders around columns?
-set draw_borders false
+# NOTE: Borderless columns may cause stripes in image previews.
+set draw_borders true
 
 # Display the directory name in tabs?
 set dirname_in_tabs false
