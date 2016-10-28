@@ -6,9 +6,12 @@ ranger:
   console_history_size: 8192
 
 features:
+  # Archive
+  - atool
+  # VCS
   - git
   - mercurial
   - bazaar
 
 
-# vim: set filetype=yaml :
+# vim: set filetype=eruby.yaml :

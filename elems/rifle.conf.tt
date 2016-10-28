@@ -201,3 +201,6 @@ label wallpaper, number 14, mime ^image, has feh, X = feh --bg-fill "$1"
               !mime ^text, !ext xml|json|csv|tex|py|pl|rb|js|sh|php  = ask
 label editor, !mime ^text, !ext xml|json|csv|tex|py|pl|rb|js|sh|php  = $EDITOR -- "$@"
 label pager,  !mime ^text, !ext xml|json|csv|tex|py|pl|rb|js|sh|php  = "$PAGER" -- "$@"
+
+
+# vim: set filetype=eruby.cfg :
