@@ -8,7 +8,7 @@ ranger:
 features:
   # Archive management operations (using `atool`).
   - atool
-  # Highlight source code (using `source-highlight`).
+  # Highlight source code (using `highlight`).
   - highlight
   # Media information (using `mediainfo`).
   - media_info
