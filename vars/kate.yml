@@ -9,7 +9,7 @@ features:
   # Archive management operations (using `atool`).
   - atool
   # Highlight source code (using `source-highlight`).
-  - source_highlight
+  - highlight
   # Media information (using `mediainfo`).
   - media_info
   # VCS support.
