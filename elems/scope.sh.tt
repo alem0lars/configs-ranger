@@ -86,8 +86,8 @@ case "$mimetype" in
       ;;
     # Syntax highlight for text files:
     *)
-      <% if has_feature? :source_highlight %>
-      try source-highlight --failsafe --infer-lang --out-format=esc --style-file=esc.style -i "$path" && { dump | trim; exit 5; }
+      <% if has_feature? :highlight %>
+      try highlight -O xterm256 -S "${extension}" -i "${path}" && { dump | trim; exit 5; }
       <% end %>
       exit 2
       ;;
