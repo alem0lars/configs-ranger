@@ -1,0 +1,21 @@
+# => inherits: generic, with-w3m <= #
+
+
+ranger:
+  dir_history_size: 8192
+  console_history_size: 8192
+
+features:
+  # Archive management operations (using `atool`).
+  - atool
+  # Highlight source code (using `source-highlight`).
+  - highlight
+  # Media information (using `mediainfo`).
+  - media_info
+  # VCS support.
+  - git
+  - mercurial
+  - bazaar
+
+
+# vim: set filetype=eruby.yaml :
