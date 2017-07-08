@@ -40,11 +40,16 @@ from ranger.core.loader  import CommandLoader
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 # ────────────────────────────────────────────────────────────────── Archive ──┐
+
 <% if has_feature? :atool %>
+
 # ──────────────────────────────────────────────────────── Extract ← Archive ──┤
+
 class extracthere(Command):
+
     def execute(self):
-        """ Extract copied files to current directory """
+        """Extract copied files to current directory.
+        """
         copied_files = tuple(self.fm.copy_buffer)
 
         if not copied_files:
@@ -72,10 +77,14 @@ class extracthere(Command):
 
         obj.signal_bind('after', refresh)
         self.fm.loader.add(obj)
+
 # ─────────────────────────────────────────────────────── Compress ← Archive ──┤
+
 class compress(Command):
+
     def execute(self):
-        """ Compress marked files to current directory """
+        """Compress marked files to current directory.
+        """
         cwd = self.fm.thisdir
         marked_files = cwd.get_selection()
 
@@ -98,12 +107,15 @@ class compress(Command):
         self.fm.loader.add(obj)
 
     def tab(self):
-        """ Complete with current folder name """
+        """Complete with current folder name.
+        """
 
         extension = ['.zip', '.tar.gz', '.rar', '.7z']
         return ['compress ' + os.path.basename(self.fm.thisdir.path) + ext
                 for ext in extension]
+
 <% end %>
+
 # ─────────────────────────────────────────────────────────────────────────────┘
 
 

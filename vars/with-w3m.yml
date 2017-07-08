@@ -1,4 +1,5 @@
 ranger:
   preview_images_method: w3m
 
+
 # vim: set filetype=yaml :
